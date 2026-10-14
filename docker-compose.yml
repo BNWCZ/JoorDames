@@ -1,0 +1,13 @@
+services:
+  joordames:
+    build: .
+    env_file: .env
+    environment:
+      - TZ=Europe/Paris
+    volumes:
+      - ./session:/app/session
+      - ./bookings.csv:/app/bookings.csv
+      - ./service_account.json:/app/service_account.json:ro
+      - ./debug:/app/debug
+      - ./debug_out:/app/debug_out
+      - ./logs:/app/logs

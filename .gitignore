@@ -1,0 +1,19 @@
+# Runtime
+.env
+bookings.csv
+cron.log
+logs/*.log*
+session/state.json
+service_account.json
+debug/
+debug_out/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Internal
+ROADMAP.md
+spa_booking_steps.txt
+.claude/
